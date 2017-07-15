@@ -1,0 +1,14 @@
+<header [ngClass]="auth.isAuthenticated() ? 'active' : 'block'">
+  <nav *ngIf="auth.isAuthenticated()">
+    <a [routerLink]="['home']">Home</a>
+    <a [routerLink]="['flats']">Flats</a>
+    <a [routerLink]="['logout']">logout</a>
+  </nav>
+</header>
+<main>
+  <h1 *ngIf="!auth.isAuthenticated()">{{title}}</h1>
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <h4>Footer Inf Here</h4>
+</footer>

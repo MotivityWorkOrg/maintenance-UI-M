@@ -1,0 +1,4 @@
+<div class="container">
+  <admin-view *ngIf="loggedUser.role === 'ADMIN'"></admin-view>
+  <user-vew *ngIf="loggedUser.role === 'USER'"></user-vew>
+</div>
