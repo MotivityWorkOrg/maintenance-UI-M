@@ -4,10 +4,9 @@ jspm_packages
 jspm.config.js
 out
 platforms
-www/*.js
-www/*.js.map
-www/app/*/*.js
-www/app/*/*.js.map
+
+www/**/*.js
+www/**/*.map
 npm-debug*.*
 .idea
 www/dist

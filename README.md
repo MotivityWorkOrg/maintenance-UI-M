@@ -13,5 +13,6 @@ It is tested to work on Android and iOS, and it supports concepts such as bundli
 
 ## For Android
 1. cordova platform add android
-2. npm run cordova:android
+2. cordova platform add browser
+3. npm run cordova:android
 
